@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI多媒體創作</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 20px;
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .comparison {
+      margin-top: 40px;
+    }
+
+    .image-pair {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-pair figure {
+      flex: 1 1 45%;
+      text-align: center;
+      margin: 0;
+    }
+
+    .image-pair img,
+    .image-pair video {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-pair figcaption {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .reflection {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      margin-top: 30px;
+      color: #444;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .reflection h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #2a5d9f;
+    }
+
+    @media (max-width: 768px) {
+      .image-pair figure {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI多媒體創作</h1>
+  </header>
+
+  <div class="content">
+    <h2>學習成果展示</h2>
+
+    <!-- 圖片對比區 -->
+    <div class="comparison">
+      <div class="image-pair">
+        <figure>
+          <img src="585-2.png" alt="AI生成影片" />
+          <figcaption>原始照片</figcaption>
+        </figure>
+        <figure>
+          <video controls>
+            <source src="585-3(1).mp4" type="video/mp4">
+          </video>
+          <figcaption>AI生成製作動畫</figcaption>
+        </figure>
+      </div>
+
+      <div class="reflection">
+        <h3>我的心得</h3>
+        <p>
+          透過這次的 AI 圖片風格轉換練習，我更了解了風格轉換模型的運作方式，
+          並實際體驗從原始圖像到風格化圖像的過程。雖然一開始不太熟悉參數設定，
+          但透過不斷嘗試與修正，最終達到滿意的結果。這讓我更有信心應用 AI 於創意製作上。
+        </p>
+      </div>
+    </div>
+    <!-- 圖片與影片對比區 -->
+    <div class="comparison">
+      <div class="image-pair">
+        <figure>
+          <video controls>
+            <source src="585-1.mp4" type="video/mp4">
+          </video>
+          <figcaption>AI生成製作動畫</figcaption>
+        </figure>
+      </div>
+
+      <div class="reflection">
+        <h3>AI自動生成的創作心得</h3>
+        <p>
+          這次專案中，我嘗試運用AI技術自動生成故事內容，並透過AI影像生成工具創作出符合情節的角色照片，
+          最後再搭配剪輯軟體，將文字、影像與故事節奏完整串聯成一部視覺與敘事兼具的影片。
+          過程中不僅提升了我對AI應用在創意影像領域的認識，也讓我體會到跨工具整合與故事結構安排的重要性，對未來多媒體與AI互動專案有了更多靈感與想法。
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>
