@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人技能 - 孫于堰</title>
   <style>
-    /* 字體與基礎設定 */
     body {
       font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
       background-color: var(--bg-color);
@@ -31,7 +30,6 @@
       --card-shadow: rgba(0,0,0,0.7);
     }
 
-    /* 頁首 */
     header {
       background-color: var(--primary-color);
       color: white;
@@ -51,7 +49,6 @@
       letter-spacing: 1px;
     }
     
-    /* 主題切換按鈕 */
     #theme-toggle {
       position: fixed;
       top: 20px;
@@ -70,7 +67,6 @@
       color: var(--primary-color);
     }
 
-    /* 主要內容區 */
     main {
       max-width: 900px;
       margin: 40px auto;
@@ -103,7 +99,6 @@
       letter-spacing: 1.5px;
     }
 
-    /* 個人照片 */
     .profile-pic {
       float: right;
       width: 160px;
@@ -119,7 +114,6 @@
       transform: scale(1.05);
     }
 
-    /* 清單樣式 */
     ul {
       list-style-type: none;
       padding-left: 0;
@@ -130,7 +124,6 @@
       font-size: 1.1rem;
     }
 
-    /* 技能區 */
     .skills {
       display: flex;
       flex-wrap: wrap;
@@ -151,7 +144,6 @@
       background-color: #357ABD;
     }
 
-    /* 進度條 */
     .skill-bar {
       margin-top: 8px;
       background-color: #ddd;
@@ -169,7 +161,6 @@
       transition: width 1.5s ease-in-out;
     }
 
-    /* 專案區 */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
@@ -211,7 +202,6 @@
       border-color: var(--primary-color);
     }
 
-    /* 聯絡方式 */
     .contact-list li {
       font-size: 1.1rem;
       margin-bottom: 14px;
@@ -227,7 +217,6 @@
       text-decoration: underline;
     }
 
-    /* 頁尾 */
     footer {
       text-align: center;
       padding: 25px 15px;
@@ -242,7 +231,6 @@
       color: #aaa;
     }
 
-    /* 回頂按鈕 */
     #back-to-top {
       position: fixed;
       bottom: 30px;
@@ -266,7 +254,6 @@
       pointer-events: auto;
     }
 
-    /* 響應式 */
     @media (max-width: 600px) {
       .profile-pic {
         float: none;
@@ -277,7 +264,6 @@
         justify-content: center;
       }
     }
-    /* 導覽選單樣式 */
 .navbar {
   text-align: center;
   margin-top: 20px;
@@ -315,7 +301,6 @@
   color: #ffd700;
 }
 
-/* 手機版樣式 */
 @media (max-width: 768px) {
   .hamburger {
     display: inline-block;
@@ -445,7 +430,6 @@
   <button id="back-to-top" aria-label="回到頂部" title="回到頂部">&#8679;</button>
 
   <script>
-    // 主題切換功能
     const themeToggleBtn = document.getElementById('theme-toggle');
     const currentTheme = localStorage.getItem('theme') || 'light';
     if(currentTheme === 'dark') {
@@ -467,7 +451,6 @@
       }
     });
 
-    // 技能進度條動畫
     window.addEventListener('load', () => {
       const skillItems = document.querySelectorAll('.skills .skill-item');
       const skillBars = document.querySelectorAll('.skill-bar .skill-level');
@@ -481,7 +464,6 @@
       });
     });
 
-     // 回頂按鈕顯示與功能
     const backToTopBtn = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
       if(window.scrollY > 300) {
@@ -495,13 +477,11 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // 漢堡選單控制
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('show');
     });
-    // 技能進度條動畫
 window.addEventListener('load', () => {
   const skillBars = document.querySelectorAll('.skill-bar .skill-level');
   const skillItems = document.querySelectorAll('.skills .skill-item');
